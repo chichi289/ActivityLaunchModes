@@ -4,40 +4,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ActivityTwo"
-    tools:ignore="HardcodedText">
+    tools:context=".ActivityTwo">
 
     <TextView
         android:id="@+id/textViewInstanceValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Activity-Two"
+        android:text="@string/activity_b"
         android:textSize="24sp" />
 
     <Button
         android:id="@+id/buttonStartActivityA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Activity A" />
+        android:text="@string/start_activity_a" />
 
     <Button
         android:id="@+id/buttonStartActivityB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Activity B" />
+        android:text="@string/start_activity_b" />
 
     <Button
         android:id="@+id/buttonStartActivityC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Activity C" />
+        android:text="@string/start_activity_c" />
 
     <Button
         android:id="@+id/buttonStartActivityD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Activity D" />
+        android:text="@string/start_activity_d" />
 
     <ScrollView
         android:layout_width="match_parent"

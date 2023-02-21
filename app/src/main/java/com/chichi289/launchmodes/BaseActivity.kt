@@ -35,7 +35,6 @@ abstract class BaseActivity : AppCompatActivity() {
                 
                 """.trimIndent()
             )
-
             stringBuilder.append(
                 """
                 TopActivity: ${
@@ -46,10 +45,9 @@ abstract class BaseActivity : AppCompatActivity() {
                 
                 """.trimIndent()
             )
-
             stringBuilder.append(
                 """
-                BaseActivity:${
+                BaseActivity: ${
                     info.baseActivity!!.className.replace(
                         "com.chichi289.launchmodes.", ""
                     )
