@@ -8,8 +8,12 @@ width="200" hspace="10" vspace="10">](/screenshots/ss2.png)
 [<img src="/screenshots/ss3.png" align="left"
 width="200" hspace="10" vspace="10">](/screenshots/ss3.png)
 
-> Inspired from
-<a href="https://github.com/AnilDeshpande/ActivityLauchModesDemo" title="AnilDeshpande">AnilDeshpande</a>
+[<img src="/screenshots/ss4.png" align="left"
+width="200" hspace="10" vspace="10">](/screenshots/ss4.png)
+
 
 ## Build for testing
 <a href="/apk/launch-mode-app-debug.apk" title="Download" download>Download</a>
+
+> Inspired from
+<a href="https://github.com/AnilDeshpande/ActivityLauchModesDemo" title="AnilDeshpande">AnilDeshpande</a>
