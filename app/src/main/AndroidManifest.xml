@@ -13,7 +13,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".ActivityOne"
+            android:name=".ActivityA"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,15 +23,15 @@
         </activity>
 
         <activity
-            android:name=".ActivityTwo"
+            android:name=".ActivityB"
             android:exported="false" />
 
         <activity
-            android:name=".ActivityThree"
+            android:name=".ActivityC"
             android:exported="false" />
 
         <activity
-            android:name=".ActivityFour"
+            android:name=".ActivityD"
             android:exported="false" />
 
     </application>

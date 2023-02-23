@@ -2,13 +2,18 @@ package com.chichi289.launchmodes
 
 import android.os.Bundle
 import android.util.Log
-import com.chichi289.launchmodes.databinding.ActivityTwoBinding
+import com.chichi289.launchmodes.adapter.TaskAdapter
+import com.chichi289.launchmodes.databinding.ActivityFourBinding
 
-class ActivityTwo : BaseActivity() {
+class ActivityD : BaseActivity() {
 
-    private lateinit var binding: ActivityTwoBinding
+    private lateinit var binding: ActivityFourBinding
 
     private var currentInstanceValue = 0
+
+    private var mTaskList = ArrayList<Result>()
+
+    private val mTaskAdapter: TaskAdapter by lazy { TaskAdapter(mTaskList) }
 
     init {
         instanceCounter++
@@ -17,36 +22,42 @@ class ActivityTwo : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityTwoBinding.inflate(layoutInflater)
+        binding = ActivityFourBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        setupTaskAdapter()
         binding.apply {
             textViewInstanceValue.append(",Current instance: $currentInstanceValue")
 
             buttonStartActivityA.setOnClickListener {
-                startActivity(this@ActivityTwo, ActivityOne::class.java)
+                startActivity(this@ActivityD, ActivityA::class.java)
             }
             buttonStartActivityB.setOnClickListener {
-                startActivity(this@ActivityTwo, ActivityTwo::class.java)
+                startActivity(this@ActivityD, ActivityB::class.java)
             }
             buttonStartActivityC.setOnClickListener {
-                startActivity(this@ActivityTwo, ActivityThree::class.java)
+                startActivity(this@ActivityD, ActivityC::class.java)
             }
             buttonStartActivityD.setOnClickListener {
-                startActivity(this@ActivityTwo, ActivityFour::class.java)
+                startActivity(this@ActivityD, ActivityD::class.java)
             }
         }
+    }
 
+    private fun setupTaskAdapter() {
+        binding.rvTask.adapter = mTaskAdapter
     }
 
     override fun onResume() {
         super.onResume()
         Log.e(TAG, "Instances: $currentInstanceValue")
         binding.textViewTaskInfo.text = getAppTaskState()
+
+        mTaskList.clear()
+        mTaskList.addAll(getAppTasks())
     }
 
     companion object {
-        private val TAG = ActivityTwo::class.java.simpleName
+        private val TAG = ActivityD::class.java.simpleName
         private var instanceCounter = 0
     }
 }

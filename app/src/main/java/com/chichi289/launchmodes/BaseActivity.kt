@@ -20,8 +20,6 @@ abstract class BaseActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    protected fun getNumberOfTasks(): Int = activityManager.appTasks.size
-
     @Suppress("DEPRECATION")
     protected open fun getAppTaskState(): String {
         val stringBuilder = StringBuilder()
@@ -58,6 +56,37 @@ abstract class BaseActivity : AppCompatActivity() {
             stringBuilder.append("\n\n")
         }
         return stringBuilder.toString()
+    }
+
+    @Suppress("DEPRECATION")
+    protected open fun getAppTasks(): ArrayList<Result> {
+
+        val mList = ArrayList<Result>()
+
+
+        val taskInfo = activityManager.getRunningTasks(10)
+        for (info in taskInfo) {
+            val activityList = ArrayList<String>()
+            activityList.add(
+                "TOP:${
+                    info.topActivity!!.className.replace(
+                        "com.chichi289.launchmodes.", ""
+                    )
+                }"
+            )
+
+            activityList.add(
+                "BASE:${
+                    info.baseActivity!!.className.replace(
+                        "com.chichi289.launchmodes.", ""
+                    )
+                }"
+            )
+
+            val result = Result(id = info.id, activities = activityList)
+            mList.add(result)
+        }
+        return mList
     }
 
 }
