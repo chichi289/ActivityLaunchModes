@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import com.chichi289.launchmodes.adapter.TaskAdapter
 import com.chichi289.launchmodes.databinding.ActivityTwoBinding
+import com.chichi289.launchmodes.model.Result
 
 class ActivityB : BaseActivity() {
 

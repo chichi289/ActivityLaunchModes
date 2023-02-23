@@ -4,7 +4,7 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.chichi289.launchmodes.Result
+import com.chichi289.launchmodes.model.Result
 import com.chichi289.launchmodes.databinding.ItemTaskBinding
 
 class TaskAdapter(

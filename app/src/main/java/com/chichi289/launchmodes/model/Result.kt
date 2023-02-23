@@ -1,4 +1,4 @@
-package com.chichi289.launchmodes
+package com.chichi289.launchmodes.model
 
 
 data class Result(

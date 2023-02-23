@@ -5,6 +5,7 @@ import android.app.ActivityManager
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.chichi289.launchmodes.model.Result
 
 abstract class BaseActivity : AppCompatActivity() {
 
@@ -17,6 +18,9 @@ abstract class BaseActivity : AppCompatActivity() {
 
     protected fun startActivity(activity: Activity, targetActivityClass: Class<*>) {
         val intent = Intent(activity, targetActivityClass)
+        /*if(targetActivityClass == ActivityB::class.java){
+            intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
+        }*/
         startActivity(intent)
     }
 
