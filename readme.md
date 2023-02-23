@@ -1,12 +1,12 @@
 ## Activity LaunchMode
 [<img src="/screenshots/ss1.png" align="left"
-width="200" hspace="20" vspace="10">](/screenshots/ss1.png)
+width="200" hspace="20" vspace="50">](/screenshots/ss1.png)
 
 [<img src="/screenshots/ss2.png" align="left"
 width="200" hspace="20" vspace="10">](/screenshots/ss2.png)
 
 [<img src="/screenshots/ss3.png" align="left"
-width="200" hspace="20" vspace="50">](/screenshots/ss3.png)
+width="200" hspace="20" vspace="10">](/screenshots/ss3.png)
 
 
 > Build for testing
