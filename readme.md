@@ -8,7 +8,7 @@ width="200" hspace="10" vspace="10">](/screenshots/ss2.png)
 [<img src="/screenshots/ss3.png" align="left"
 width="200" hspace="10" vspace="10">](/screenshots/ss3.png)
 
-## Inspired from
+> Inspired from
 <a href="https://github.com/AnilDeshpande/ActivityLauchModesDemo" title="AnilDeshpande">AnilDeshpande</a>
 
 ## Build for testing
