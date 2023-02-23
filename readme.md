@@ -9,7 +9,7 @@ width="200" hspace="20" vspace="10">](/screenshots/ss2.png)
 width="200" hspace="20" vspace="10">](/screenshots/ss3.png)
 
 
-## Build for testing
+> Build for testing
 <a href="/apk/launch-mode-app-debug.apk" title="Download" download>Download</a>
 
 > Inspired from
