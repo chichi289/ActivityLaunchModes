@@ -2,10 +2,10 @@
 
 ###### This demo application is designed to help you understand how the launch mode of an Activity affects its behavior when it's started from another Activity.
 
-###### * Standard
-###### * SingleTop
-###### * SingleTask
-###### * SingleInstance
+ * Standard
+ * SingleTop
+ * SingleTask
+ * SingleInstance
 
 | Screenshots                                                                       |                                                                                     |                                                                                     |
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
