@@ -1,13 +1,8 @@
 ## Activity LaunchMode
 
-[<img src="/screenshots/ss1.png" align="left"
-width="200" hspace="20" vspace="10">](/screenshots/ss1.png)
-
-[<img src="/screenshots/ss2.png" align="left"
-width="200" hspace="20" vspace="10">](/screenshots/ss2.png)
-
-[<img src="/screenshots/ss3.png" align="left"
-width="200" hspace="20" vspace="10">](/screenshots/ss3.png)
+| Screenshots                                                                       |                                                                                     |                                                                                     |
+|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| <img src="/screenshots/ss1.jpg" align="left" width="200" hspace="10" vspace="10"> | <img src="/screenshots/ss2.jpg" align="center" width="200" hspace="10" vspace="10"> | <img src="/screenshots/ss3.jpg" align="center" width="200" hspace="10" vspace="10"> |
 
 ## Download & Credit
 
