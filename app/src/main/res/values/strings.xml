@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LaunchModes</string>
+
+    <string name="activity_a"> Activity-A</string>
+    <string name="activity_b"> Activity-B</string>
+    <string name="activity_c"> Activity-C</string>
+    <string name="activity_d"> Activity-D</string>
+
+    <string name="start_activity_a">Start Activity A</string>
+    <string name="start_activity_b">Start Activity B</string>
+    <string name="start_activity_c">Start Activity C</string>
+    <string name="start_activity_d">Start Activity D</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        android:orientation="vertical"
+        tools:context=".ActivityB">
+
+        <TextView
+            android:id="@+id/textViewInstanceValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/activity_b"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonStartActivityA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_activity_a" />
+
+        <Button
+            android:id="@+id/buttonStartActivityB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_activity_b" />
+
+        <Button
+            android:id="@+id/buttonStartActivityC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_activity_c" />
+
+        <Button
+            android:id="@+id/buttonStartActivityD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_activity_d" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/textViewTaskInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#000000"
+                android:paddingHorizontal="5dp"
+                android:textColor="#FFFFFF" />
+        </ScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/color_background"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_task" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>
